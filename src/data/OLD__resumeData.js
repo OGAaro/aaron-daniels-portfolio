@@ -122,21 +122,21 @@ export const radarData = [
 ];
 
 export const proficiencies = [
-  { name: 'SQL / Databases',           pct: 97, gradient: 'linear-gradient(90deg,#A03333,#B86B6B)' },
-  { name: 'Python / Data Engineering', pct: 90, gradient: 'linear-gradient(90deg,#B86B6B,#A03333)' },
-  { name: 'Azure / Cloud Platforms',   pct: 88, gradient: 'linear-gradient(90deg,#A03333,#C9B896)' },
-  { name: 'JavaScript / Front-End',    pct: 85, gradient: 'linear-gradient(90deg,#C9B896,#A03333)' },
-  { name: 'Power BI / Data Viz',       pct: 92, gradient: 'linear-gradient(90deg,#C9B896,#B86B6B)' },
-  { name: 'ETL / Data Pipelines',      pct: 93, gradient: 'linear-gradient(90deg,#A03333,#C9B896)' },
-  { name: 'AI Agents / Copilot Studio',pct: 85, gradient: 'linear-gradient(90deg,#B86B6B,#C9B896)' },
-  { name: 'React / Vue.js',            pct: 80, gradient: 'linear-gradient(90deg,#B86B6B,#A03333)' },
+  { name: 'SQL / Databases',           pct: 97, gradient: 'linear-gradient(90deg,#00D4FF,#9B6DFF)' },
+  { name: 'Python / Data Engineering', pct: 90, gradient: 'linear-gradient(90deg,#9B6DFF,#00D4FF)' },
+  { name: 'Azure / Cloud Platforms',   pct: 88, gradient: 'linear-gradient(90deg,#00D4FF,#00E5A0)' },
+  { name: 'JavaScript / Front-End',    pct: 85, gradient: 'linear-gradient(90deg,#00E5A0,#00D4FF)' },
+  { name: 'Power BI / Data Viz',       pct: 92, gradient: 'linear-gradient(90deg,#F5A623,#00D4FF)' },
+  { name: 'ETL / Data Pipelines',      pct: 93, gradient: 'linear-gradient(90deg,#00D4FF,#F5A623)' },
+  { name: 'AI Agents / Copilot Studio',pct: 85, gradient: 'linear-gradient(90deg,#9B6DFF,#F5A623)' },
+  { name: 'React / Vue.js',            pct: 80, gradient: 'linear-gradient(90deg,#9B6DFF,#00E5A0)' },
 ];
 
 export const certifications = [
-  { name: 'Microsoft Certified Solutions Associate', issuer: 'MICROSOFT',      icon: '🪟', color: 'rgba(160,51,51,.12)',  border: 'rgba(160,51,51,.35)'  },
-  { name: 'Certified Scrum Master',                  issuer: 'SCRUM ALLIANCE', icon: '🔄', color: 'rgba(201,184,150,.1)', border: 'rgba(201,184,150,.3)' },
-  { name: 'Certified Scrum Product Owner',           issuer: 'SCRUM ALLIANCE', icon: '📋', color: 'rgba(184,107,107,.12)',border: 'rgba(184,107,107,.3)' },
-  { name: 'Epic Cosmos Data Architect',              issuer: 'EPIC SYSTEMS',   icon: '🏥', color: 'rgba(201,184,150,.12)',border: 'rgba(201,184,150,.35)' },
+  { name: 'Microsoft Certified Solutions Associate', issuer: 'MICROSOFT',      icon: '🪟', color: 'rgba(0,120,212,.12)',  border: 'rgba(0,120,212,.25)' },
+  { name: 'Certified Scrum Master',                  issuer: 'SCRUM ALLIANCE', icon: '🔄', color: 'rgba(0,229,160,.1)',   border: 'rgba(0,229,160,.25)' },
+  { name: 'Certified Scrum Product Owner',           issuer: 'SCRUM ALLIANCE', icon: '📋', color: 'rgba(155,109,255,.1)', border: 'rgba(155,109,255,.25)' },
+  { name: 'Epic Cosmos Data Architect',              issuer: 'EPIC SYSTEMS',   icon: '🏥', color: 'rgba(245,166,35,.1)',  border: 'rgba(245,166,35,.25)' },
 ];
 
 export const interests = [

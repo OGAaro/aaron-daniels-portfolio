@@ -44,17 +44,17 @@ export default function Skills() {
               <div style={{ width: '100%', height: 280 }}>
                 <ResponsiveContainer>
                   <RadarChart data={radarData}>
-                    <PolarGrid stroke="#3D1F1F" />
+                    <PolarGrid stroke="#1C2B52" />
                     <PolarAngleAxis
                       dataKey="skill"
-                      tick={{ fill: '#A89484', fontSize: 10, fontFamily: 'DM Mono, monospace' }}
+                      tick={{ fill: '#6B84B8', fontSize: 10, fontFamily: 'DM Mono, monospace' }}
                     />
                     <PolarRadiusAxis domain={[0, 100]} tick={false} axisLine={false} />
                     <Radar
                       dataKey="value"
-                      stroke="#A03333"
-                      fill="#A03333"
-                      fillOpacity={0.15}
+                      stroke="#00D4FF"
+                      fill="#00D4FF"
+                      fillOpacity={0.1}
                       strokeWidth={2}
                     />
                   </RadarChart>
