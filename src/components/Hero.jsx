@@ -55,7 +55,7 @@ export default function Hero() {
           <div className="headshot-frame">
             <div className="headshot-inner">
               <img
-                src="public/headshot2.png"
+                src="/headshot2.png"
                 alt="Aaron Daniels Jr."
                 className="headshot-img"
               />
