@@ -7,7 +7,7 @@ export default function Hero() {
   // Each call to useCounter kicks off its own independent animation on mount.
   const yoe  = useCounter(8);
   const cert = useCounter(4);
-  const tech = useCounter(30);
+  const tech = useCounter(35);
 
   return (
     <section id="hero">
