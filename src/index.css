@@ -442,6 +442,44 @@ footer {
 
 /* Auto-advance progress bar (removed — kept selector hooks for cleanliness) */
 
+/* Pagination dots — hidden by default (desktop), shown via mobile media query.
+   Centered row of small circular buttons that double as tap shortcuts. */
+.project-dots {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: -.5rem;
+  margin-bottom: .5rem;
+}
+.project-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--dim);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all .25s ease;
+  /* Larger invisible tap target — important for accessibility on touch devices */
+  position: relative;
+}
+.project-dot::before {
+  content: '';
+  position: absolute;
+  inset: -8px;  /* expands tap area to roughly 22x22px without affecting visuals */
+}
+.project-dot:hover {
+  opacity: 0.8;
+}
+.project-dot.active {
+  width: 8px;
+  height: 8px;
+  background: var(--cyan);
+  opacity: 1;
+}
+
 /* Panel wrapper */
 .project-panel-wrap {
   background: var(--card);
@@ -708,6 +746,7 @@ footer {
   }
   .project-tabs::-webkit-scrollbar { display: none; }
   .project-tab { min-width: 180px; flex: 0 0 auto; }
+  .project-dots { display: flex; }   /* show dots only on mobile */
   .project-panel { grid-template-columns: 1fr; }
   .project-visual {
     min-height: 220px;

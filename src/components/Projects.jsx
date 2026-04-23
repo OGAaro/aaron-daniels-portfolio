@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { projects } from '../data/resumeData';
 import SectionHeader from './SectionHeader';
 import FadeUp from './FadeUp';
@@ -14,6 +14,22 @@ export default function Projects() {
   // useRef stores values without triggering re-renders — perfect for tracking
   // gesture coordinates that don't need to be reflected in the UI.
   const touchStartX = useRef(null);
+
+  // Ref to the tab strip element — we need DOM access to scroll the active tab into view
+  // when the user navigates via a pagination dot or swipe (since those don't auto-scroll
+  // the tab strip the way clicking a tab directly would).
+  const tabsRef = useRef(null);
+
+  // Keep the active tab visible in the scrollable tab strip on mobile.
+  // Runs whenever activeIndex changes.
+  useEffect(() => {
+    const strip = tabsRef.current;
+    if (!strip) return;
+    const activeTab = strip.children[activeIndex];
+    if (activeTab && typeof activeTab.scrollIntoView === 'function') {
+      activeTab.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    }
+  }, [activeIndex]);
 
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX;
@@ -46,7 +62,7 @@ export default function Projects() {
         <FadeUp className="projects-showcase">
           {/* Tab strip */}
           <div className="project-tabs-wrap">
-            <div className="project-tabs" role="tablist">
+            <div className="project-tabs" role="tablist" ref={tabsRef}>
               {projects.map((p, i) => (
                 <ProjectTab
                   key={p.id}
@@ -57,6 +73,21 @@ export default function Projects() {
                 />
               ))}
             </div>
+          </div>
+
+          {/* Pagination dots — mobile-only, hidden on desktop where all tabs fit.
+              Dots are also tappable shortcuts to jump to that project. */}
+          <div className="project-dots" role="tablist" aria-label="Project pagination">
+            {projects.map((p, i) => (
+              <button
+                key={p.id}
+                type="button"
+                className={`project-dot ${i === activeIndex ? 'active' : ''}`}
+                onClick={() => setActiveIndex(i)}
+                aria-label={`Go to project ${i + 1}: ${p.shortLabel}`}
+                aria-pressed={i === activeIndex}
+              />
+            ))}
           </div>
 
           {/* The active panel — swipe-aware on touch */}
