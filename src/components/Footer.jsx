@@ -13,7 +13,7 @@ export default function Footer() {
           linkedin.com/in/aarondaniels2
         </a>
       </div>
-      <div className="footer-copy">© 2025 Aaron Daniels Jr.</div>
+      <div className="footer-copy">Powered by 4th & Forever Creative Consulting</div>
     </footer>
   );
 }
