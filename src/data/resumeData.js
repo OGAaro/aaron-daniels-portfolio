@@ -124,7 +124,7 @@ export const radarData = [
 export const proficiencies = [
   { name: 'SQL / Databases',           pct: 97, gradient: 'linear-gradient(90deg,#A03333,#B86B6B)' },
   { name: 'Python / Data Engineering', pct: 90, gradient: 'linear-gradient(90deg,#B86B6B,#A03333)' },
-  { name: 'Azure / Cloud Platforms',   pct: 88, gradient: 'linear-gradient(90deg,#A03333,#C9B896)' },
+  { name: 'Azure/AWS Cloud Platforms', pct: 88, gradient: 'linear-gradient(90deg,#A03333,#C9B896)' },
   { name: 'JavaScript / Front-End',    pct: 85, gradient: 'linear-gradient(90deg,#C9B896,#A03333)' },
   { name: 'Power BI / Data Viz',       pct: 92, gradient: 'linear-gradient(90deg,#C9B896,#B86B6B)' },
   { name: 'ETL / Data Pipelines',      pct: 93, gradient: 'linear-gradient(90deg,#A03333,#C9B896)' },
