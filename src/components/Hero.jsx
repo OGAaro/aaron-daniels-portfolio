@@ -28,10 +28,10 @@ export default function Hero() {
             Sr. Application Systems Analyst &amp; Full-Stack Engineer
           </div>
           <p className="hero-desc">
-            Data engineering leader with 8+ years bridging enterprise systems,
-            cloud infrastructure, and front-end development. Currently pursuing
-            an M.S. in MIS at Texas A&amp;M while driving analytics and
-            automation at UTMB.
+            Strategic technologist with 8+ years of experience in architecting end-to-end 
+            solutions across enterprise systems, cloud infrastructure, and front-end platforms. 
+            Expert at bridging the gap between complex data ecosystems and actionable business 
+            intelligence through high-impact automation and analytics initiatives.
           </p>
           <div className="hero-badges">
             {heroBadges.map(b => <span key={b} className="badge">{b}</span>)}
