@@ -96,7 +96,7 @@ export const skillCategories = [
   {
     label: 'Frameworks & Libraries',
     type: 'fw',
-    items: ['React', 'Vue.js', 'Node.js / Express', 'Spring', 'jQuery', 'Drupal'],
+    items: ['React', 'Vue.js', 'Node.js / Express', 'Spring', 'jQuery'],
   },
   {
     label: 'Cloud & Data Platforms',
@@ -106,7 +106,7 @@ export const skillCategories = [
   {
     label: 'Tools & Practices',
     type: 'tool',
-    items: ['Microsoft Copilot Studio', 'AI Agents', 'RAG / Knowledge Grounding', 'Power BI', 'Tableau', 'Sigma', 'dbt', 'SSIS', 'Git', 'REST APIs', 'Agile / Scrum', 'ETL Development'],
+    items: ['Microsoft Copilot Studio', 'AI Agents', 'Project Management', 'CI/CD', 'Power BI', 'Tableau', 'Sigma', 'dbt', 'SSIS', 'Git', 'REST APIs', 'Agile / Scrum', 'ETL Development', 'Wordpress', 'Drupal'],
   },
 ];
 
@@ -149,7 +149,7 @@ export const interests = [
 
 export const heroBadges = [
   'AI Agents', 'Microsoft Copilot Studio', 'Azure Data Factory', 'Snowflake',
-  'Salesforce', 'React / Vue.js', 'Power BI', 'Python', 'ETL Pipelines', 'RESTful APIs',
+  'Salesforce', 'React / Vue.js', 'Power BI', 'Business Intelligence', 'ETL Pipelines', 'RESTful APIs',
 ];
 
 /* ═══════════════════════════════════════════════════════════════════════════
