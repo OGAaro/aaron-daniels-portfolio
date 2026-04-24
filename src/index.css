@@ -117,7 +117,7 @@ nav {
 }
 .hero-desc {
   font-size: 1rem; color: var(--muted);
-  max-width: 540px; line-height: 1.75; margin-bottom: 2.5rem;
+  max-width: 600px; line-height: 1.75; margin-bottom: 2.5rem;
 }
 .hero-badges {
   display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 2.5rem;
