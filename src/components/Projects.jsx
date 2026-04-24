@@ -22,13 +22,23 @@ export default function Projects() {
 
   // Keep the active tab visible in the scrollable tab strip on mobile.
   // Runs whenever activeIndex changes.
+  //
+  // Note: we deliberately avoid scrollIntoView() here because it can scroll
+  // ANY scrollable ancestor — including the whole page — to bring the tab
+  // into view. Instead, we manually adjust only the tab strip's internal
+  // horizontal scroll position, which can never affect the page's vertical scroll.
   useEffect(() => {
     const strip = tabsRef.current;
     if (!strip) return;
     const activeTab = strip.children[activeIndex];
-    if (activeTab && typeof activeTab.scrollIntoView === 'function') {
-      activeTab.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-    }
+    if (!activeTab) return;
+
+    // Center the active tab within the visible portion of the strip.
+    const stripWidth = strip.clientWidth;
+    const tabCenter = activeTab.offsetLeft + (activeTab.clientWidth / 2);
+    const targetScroll = tabCenter - (stripWidth / 2);
+
+    strip.scrollTo({ left: targetScroll, behavior: 'smooth' });
   }, [activeIndex]);
 
   const handleTouchStart = (e) => {
