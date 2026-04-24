@@ -327,9 +327,11 @@ section { padding: 5rem 3rem; }
 .skill-pill.lang { border-color: rgba(184,107,107,.3); color: var(--purple); background: rgba(184,107,107,.05); }
 .skill-pill.lang:hover { border-color: var(--purple); background: rgba(184,107,107,.12); color: var(--purple); }
 .skill-pill.fw { border-color: rgba(201,184,150,.3); color: var(--green); background: rgba(201,184,150,.05); }
-.skill-pill.fw:hover { border-color: var(--green); background: rgba(201,184,150,.12); }
+.skill-pill.fw:hover { border-color: var(--green); background: rgba(201,184,150,.12); color: var(--green); }
 .skill-pill.cloud { border-color: rgba(160,51,51,.3); color: var(--cyan); background: rgba(160,51,51,.05); }
+.skill-pill.cloud:hover { border-color: var(--cyan); background: rgba(160,51,51,.12); color: var(--cyan); }
 .skill-pill.tool { border-color: rgba(201,184,150,.3); color: var(--gold); background: rgba(201,184,150,.05); }
+.skill-pill.tool:hover { border-color: var(--gold); background: rgba(201,184,150,.12); color: var(--gold); }
 
 .chart-wrap {
   background: var(--card); border: 1px solid var(--border);
