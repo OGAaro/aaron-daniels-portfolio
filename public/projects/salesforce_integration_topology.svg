@@ -1,0 +1,89 @@
+<svg width="100%" viewBox="0 0 680 720" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;">
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-start" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M8 1L2 5L8 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+
+<!-- Diagram backdrop -->
+<rect x="0" y="0" width="680" height="720" fill="#1E1715"/>
+
+<!-- ═══════════════════════════════════════════
+     EXTERNAL DATA SOURCES (top row, three boxes)
+     ═══════════════════════════════════════════ -->
+
+<!-- USPTO — warm bone/amber (external data source) -->
+<g>
+<rect x="40" y="60" width="180" height="80" rx="8" fill="#3D3324" stroke="#B89A65" stroke-width="0.75"/>
+<text x="130" y="92" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#F0E4CC">USPTO</text>
+<text x="130" y="114" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#C9B896">U.S. patent data</text>
+</g>
+
+<!-- EPO — warm bone/amber (external data source) -->
+<g>
+<rect x="250" y="60" width="180" height="80" rx="8" fill="#3D3324" stroke="#B89A65" stroke-width="0.75"/>
+<text x="340" y="92" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#F0E4CC">EPO</text>
+<text x="340" y="114" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#C9B896">EU patent data</text>
+</g>
+
+<!-- ERP / HCM — terracotta-rust (active enterprise system) -->
+<g>
+<rect x="460" y="60" width="180" height="80" rx="8" fill="#3D2820" stroke="#B86B4A" stroke-width="0.75"/>
+<text x="550" y="92" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#F5DDD0">ERP / HCM</text>
+<text x="550" y="114" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#D2A892">Enterprise systems</text>
+</g>
+
+<!-- Section label -->
+<text x="40" y="40" font-size="11" font-weight="500" letter-spacing="0.05em" fill="#7A6F5C">EXTERNAL INTEGRATIONS</text>
+
+<!-- ═══════════════════════════════════════════
+     ARROWS: Three sources → Salesforce (bidirectional)
+     Each path connects from box bottom to Salesforce top
+     ═══════════════════════════════════════════ -->
+
+<!-- USPTO ↔ Salesforce -->
+<line x1="130" y1="140" x2="220" y2="290" stroke="#7A6F5C" stroke-width="1.5" marker-end="url(#arrow)" marker-start="url(#arrow-start)"/>
+
+<!-- EPO ↔ Salesforce (straight down) -->
+<line x1="340" y1="140" x2="340" y2="290" stroke="#7A6F5C" stroke-width="1.5" marker-end="url(#arrow)" marker-start="url(#arrow-start)"/>
+
+<!-- ERP / HCM ↔ Salesforce -->
+<line x1="550" y1="140" x2="460" y2="290" stroke="#7A6F5C" stroke-width="1.5" marker-end="url(#arrow)" marker-start="url(#arrow-start)"/>
+
+<!-- ═══════════════════════════════════════════
+     SALESFORCE (center, prominent) — deep crimson
+     ═══════════════════════════════════════════ -->
+<g>
+<rect x="120" y="290" width="440" height="160" rx="10" fill="#3D1E1E" stroke="#A03333" stroke-width="1"/>
+<text x="340" y="324" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="500" letter-spacing="0.12em" fill="#A03333">PLATFORM HUB</text>
+<text x="340" y="362" text-anchor="middle" dominant-baseline="central" font-size="22" font-weight="700" fill="#F5DCDC">Salesforce</text>
+<text x="340" y="392" text-anchor="middle" dominant-baseline="central" font-size="13" fill="#C9A8A8">Technology Transfer Platform</text>
+
+<!-- Decorative inner divider -->
+<line x1="180" y1="412" x2="500" y2="412" stroke="#5C2A2A" stroke-width="0.5"/>
+
+<text x="340" y="430" text-anchor="middle" dominant-baseline="central" font-size="11" font-style="italic" fill="#A89484">Invention · Patent · Licensing operations</text>
+</g>
+
+<!-- ═══════════════════════════════════════════
+     ARROW: Salesforce → User community
+     ═══════════════════════════════════════════ -->
+<line x1="340" y1="450" x2="340" y2="555" stroke="#7A6F5C" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<!-- ═══════════════════════════════════════════
+     USER COMMUNITY (bottom) — mint-sage
+     ═══════════════════════════════════════════ -->
+<g>
+<rect x="120" y="555" width="440" height="100" rx="8" fill="#2D3530" stroke="#8AA88E" stroke-width="0.75"/>
+<text x="340" y="585" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#D8E5DA">Rice Research Community</text>
+<text x="340" y="612" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#9AB89E">18 internal staff · 500+ external users</text>
+<text x="340" y="635" text-anchor="middle" dominant-baseline="central" font-size="11" font-style="italic" fill="#7A8A65">Office of Technology Transfer</text>
+</g>
+
+<!-- Section label for users -->
+<text x="40" y="540" font-size="11" font-weight="500" letter-spacing="0.05em" fill="#7A6F5C">END USERS</text>
+
+</svg>
