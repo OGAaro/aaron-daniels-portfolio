@@ -22,7 +22,7 @@ export const experience = [
   },
   {
     company: 'Rice University',
-    role: 'Database Administrator, Office of Technology Transfer',
+    role: 'Database Administrator',
     location: 'Houston, Texas',
     period: 'Jul 2021 — Feb 2023',
     bullets: [
