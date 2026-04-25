@@ -1,0 +1,107 @@
+<svg width="100%" viewBox="0 0 680 720" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;">
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+
+<!-- Diagram backdrop -->
+<rect x="0" y="0" width="680" height="720" fill="#1E1715"/>
+
+<!-- ═══════════════════════════════════════════
+     Microsoft Teams container (dashed) — wraps researcher + agent + outcomes
+     SharePoint sits outside since it's a separate service
+     ═══════════════════════════════════════════ -->
+<text x="40" y="40" font-size="11" font-weight="500" letter-spacing="0.05em" fill="#7A6F5C">DEPLOYMENT ENVIRONMENT</text>
+
+<!-- Microsoft Teams container -->
+<rect x="40" y="60" width="440" height="640" rx="16" fill="none" stroke="#5C5247" stroke-width="1" stroke-dasharray="6 4"/>
+<text x="60" y="86" font-size="11" font-weight="500" letter-spacing="0.08em" fill="#7A6F5C">MICROSOFT TEAMS</text>
+
+<!-- ═══════════════════════════════════════════
+     1. Researcher (top inside Teams) — mint-sage (end user)
+     ═══════════════════════════════════════════ -->
+<g>
+<rect x="100" y="110" width="320" height="76" rx="8" fill="#2D3530" stroke="#8AA88E" stroke-width="0.75"/>
+<text x="260" y="134" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#D8E5DA">Researcher</text>
+<text x="260" y="158" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#9AB89E">Submits document via Teams chat</text>
+<text x="260" y="174" text-anchor="middle" dominant-baseline="central" font-size="10" font-style="italic" fill="#7A8A65">IRB packets · protocols · consent forms · SOPs</text>
+</g>
+
+<!-- Arrow: Researcher → Agent (with "shares document" label) -->
+<line x1="260" y1="186" x2="260" y2="248" stroke="#7A6F5C" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="270" y="217" dominant-baseline="central" font-size="10" font-style="italic" fill="#A89484">shares document</text>
+
+<!-- ═══════════════════════════════════════════
+     2. AI Triage Agent (center inside Teams) — deep crimson (the main thing)
+     ═══════════════════════════════════════════ -->
+<g>
+<rect x="100" y="250" width="320" height="120" rx="10" fill="#3D1E1E" stroke="#A03333" stroke-width="1"/>
+<text x="260" y="278" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="500" letter-spacing="0.12em" fill="#A03333">AI AGENT</text>
+<text x="260" y="306" text-anchor="middle" dominant-baseline="central" font-size="16" font-weight="700" fill="#F5DCDC">Triage Agent</text>
+<text x="260" y="328" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#C9A8A8">Built in Microsoft Copilot Studio</text>
+<line x1="140" y1="346" x2="380" y2="346" stroke="#5C2A2A" stroke-width="0.5"/>
+<text x="260" y="358" text-anchor="middle" dominant-baseline="central" font-size="10" font-style="italic" fill="#A89484">classifies · scores · responds</text>
+</g>
+
+<!-- ═══════════════════════════════════════════
+     SharePoint knowledge base (right side, OUTSIDE Teams) — bone/amber
+     ═══════════════════════════════════════════ -->
+<text x="500" y="240" font-size="11" font-weight="500" letter-spacing="0.05em" fill="#7A6F5C">REFERENCE DATA</text>
+
+<g>
+<rect x="500" y="258" width="160" height="106" rx="8" fill="#3D3324" stroke="#B89A65" stroke-width="0.75"/>
+<text x="580" y="280" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="600" fill="#F0E4CC">SharePoint</text>
+<text x="580" y="298" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#C9B896">Knowledge Base</text>
+<line x1="520" y1="316" x2="640" y2="316" stroke="#6B5C40" stroke-width="0.5"/>
+<text x="580" y="332" text-anchor="middle" dominant-baseline="central" font-size="10" font-style="italic" fill="#B89A65">Document examples</text>
+<text x="580" y="348" text-anchor="middle" dominant-baseline="central" font-size="10" font-style="italic" fill="#B89A65">&amp; scoring benchmarks</text>
+</g>
+
+<!-- Arrow: Agent ↔ SharePoint (bidirectional reference query) -->
+<line x1="420" y1="310" x2="498" y2="310" stroke="#7A6F5C" stroke-width="1.5" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<text x="459" y="298" text-anchor="middle" dominant-baseline="central" font-size="9" font-style="italic" fill="#A89484">grounds on</text>
+
+<!-- ═══════════════════════════════════════════
+     3. Outcome paths — split below agent
+     ═══════════════════════════════════════════ -->
+
+<!-- Two outcome arrows splitting from agent -->
+<line x1="200" y1="370" x2="170" y2="430" stroke="#7A6F5C" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="320" y1="370" x2="350" y2="430" stroke="#7A6F5C" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<!-- Auto-clear outcome (left) — olive-sage (positive/go) -->
+<g>
+<rect x="80" y="432" width="180" height="80" rx="8" fill="#2A3528" stroke="#7A8A65" stroke-width="0.75"/>
+<text x="170" y="456" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="600" fill="#DCE5D2">Auto-clear</text>
+<text x="170" y="478" text-anchor="middle" dominant-baseline="central" font-size="10" fill="#A8B89A">High confidence</text>
+<text x="170" y="494" text-anchor="middle" dominant-baseline="central" font-size="10" fill="#A8B89A">Fast-track approval</text>
+</g>
+
+<!-- Flag for escalation (right) — warm bone/amber (caution/review needed) -->
+<g>
+<rect x="260" y="432" width="180" height="80" rx="8" fill="#3D3324" stroke="#B89A65" stroke-width="0.75"/>
+<text x="350" y="456" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="600" fill="#F0E4CC">Flag for review</text>
+<text x="350" y="478" text-anchor="middle" dominant-baseline="central" font-size="10" fill="#C9B896">Edge case detected</text>
+<text x="350" y="494" text-anchor="middle" dominant-baseline="central" font-size="10" fill="#C9B896">Needs human attention</text>
+</g>
+
+<!-- ═══════════════════════════════════════════
+     Both outcome paths converge back to researcher (loop)
+     ═══════════════════════════════════════════ -->
+<line x1="170" y1="512" x2="170" y2="600" stroke="#7A6F5C" stroke-width="1.5"/>
+<line x1="170" y1="600" x2="260" y2="600" stroke="#7A6F5C" stroke-width="1.5"/>
+
+<line x1="350" y1="512" x2="350" y2="600" stroke="#7A6F5C" stroke-width="1.5"/>
+<line x1="350" y1="600" x2="260" y2="600" stroke="#7A6F5C" stroke-width="1.5"/>
+
+<line x1="260" y1="600" x2="260" y2="635" stroke="#7A6F5C" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<!-- Researcher review step (bottom) -->
+<g>
+<rect x="100" y="637" width="320" height="50" rx="8" fill="#2D3530" stroke="#8AA88E" stroke-width="0.75"/>
+<text x="260" y="654" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="600" fill="#D8E5DA">Researcher reviews feedback</text>
+<text x="260" y="673" text-anchor="middle" dominant-baseline="central" font-size="10" font-style="italic" fill="#9AB89E">acts on response · refines submission as needed</text>
+</g>
+
+</svg>
