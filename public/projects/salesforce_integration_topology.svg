@@ -3,9 +3,6 @@
 <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
 <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </marker>
-<marker id="arrow-start" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-<path d="M8 1L2 5L8 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</marker>
 </defs>
 
 <!-- Diagram backdrop -->
@@ -45,13 +42,13 @@
      ═══════════════════════════════════════════ -->
 
 <!-- USPTO ↔ Salesforce -->
-<line x1="130" y1="140" x2="220" y2="290" stroke="#7A6F5C" stroke-width="1.5" marker-end="url(#arrow)" marker-start="url(#arrow-start)"/>
+<line x1="130" y1="140" x2="220" y2="290" stroke="#7A6F5C" stroke-width="1.5" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
 
 <!-- EPO ↔ Salesforce (straight down) -->
-<line x1="340" y1="140" x2="340" y2="290" stroke="#7A6F5C" stroke-width="1.5" marker-end="url(#arrow)" marker-start="url(#arrow-start)"/>
+<line x1="340" y1="140" x2="340" y2="290" stroke="#7A6F5C" stroke-width="1.5" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
 
 <!-- ERP / HCM ↔ Salesforce -->
-<line x1="550" y1="140" x2="460" y2="290" stroke="#7A6F5C" stroke-width="1.5" marker-end="url(#arrow)" marker-start="url(#arrow-start)"/>
+<line x1="550" y1="140" x2="460" y2="290" stroke="#7A6F5C" stroke-width="1.5" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
 
 <!-- ═══════════════════════════════════════════
      SALESFORCE (center, prominent) — deep crimson

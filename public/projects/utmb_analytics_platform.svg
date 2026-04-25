@@ -1,0 +1,108 @@
+<svg width="100%" viewBox="0 0 680 720" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;">
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+
+<!-- Diagram backdrop -->
+<rect x="0" y="0" width="680" height="720" fill="#1E1715"/>
+
+<!-- ═══════════════════════════════════════════
+     Top section label
+     ═══════════════════════════════════════════ -->
+<text x="40" y="40" font-size="11" font-weight="500" letter-spacing="0.05em" fill="#7A6F5C">SYSTEM OF RECORD</text>
+
+<!-- ═══════════════════════════════════════════
+     1. HCM (top) — terracotta-rust (active enterprise system)
+     ═══════════════════════════════════════════ -->
+<g>
+<rect x="170" y="58" width="340" height="76" rx="8" fill="#3D2820" stroke="#B86B4A" stroke-width="0.75"/>
+<text x="340" y="82" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#F5DDD0">HCM</text>
+<text x="340" y="106" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#D2A892">Personnel status · Financial modules</text>
+</g>
+
+<!-- ═══════════════════════════════════════════
+     Pipeline arrows (HCM ↔ CTMS) with "ADF pipelines" callout
+     Two arrows side-by-side: left is bidirectional (financial),
+     right is one-way down (personnel status)
+     ═══════════════════════════════════════════ -->
+
+<!-- Bidirectional arrow (financial data) -->
+<line x1="290" y1="134" x2="290" y2="258" stroke="#7A6F5C" stroke-width="1.5" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<text x="277" y="196" text-anchor="end" dominant-baseline="central" font-size="10" font-style="italic" fill="#A89484">financial</text>
+
+<!-- One-way down arrow (personnel status) -->
+<line x1="390" y1="134" x2="390" y2="258" stroke="#7A6F5C" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="403" y="196" dominant-baseline="central" font-size="10" font-style="italic" fill="#A89484">personnel</text>
+
+<!-- ADF pipelines label between arrows -->
+<text x="340" y="178" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="500" letter-spacing="0.08em" fill="#B89A65">ADF</text>
+<text x="340" y="214" text-anchor="middle" dominant-baseline="central" font-size="10" font-weight="500" letter-spacing="0.08em" fill="#B89A65">PIPELINES</text>
+
+<!-- ═══════════════════════════════════════════
+     2. CTMS — terracotta (operational system)
+     ═══════════════════════════════════════════ -->
+<text x="40" y="240" font-size="11" font-weight="500" letter-spacing="0.05em" fill="#7A6F5C">OPERATIONAL PLATFORM</text>
+
+<g>
+<rect x="120" y="258" width="440" height="84" rx="8" fill="#3D2820" stroke="#B86B4A" stroke-width="0.75"/>
+<text x="340" y="282" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#F5DDD0">Clinical Trial Management System</text>
+<text x="340" y="304" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#D2A892">Sponsor invoicing · Personnel · Research operations</text>
+<text x="340" y="324" text-anchor="middle" dominant-baseline="central" font-size="10" font-style="italic" fill="#A89484">Native Sigma visualization tooling</text>
+</g>
+
+<!-- Arrow: CTMS → Snowflake -->
+<line x1="340" y1="342" x2="340" y2="385" stroke="#7A6F5C" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<!-- ═══════════════════════════════════════════
+     3. SNOWFLAKE container (two-layer treatment)
+     ═══════════════════════════════════════════ -->
+<text x="40" y="378" font-size="11" font-weight="500" letter-spacing="0.05em" fill="#7A6F5C">DATA WAREHOUSE</text>
+
+<!-- Outer Snowflake container -->
+<rect x="80" y="386" width="520" height="160" rx="10" fill="#2D2820" stroke="#7A8A65" stroke-width="0.75"/>
+<text x="100" y="406" font-size="10" font-weight="500" letter-spacing="0.08em" fill="#7A8A65">SNOWFLAKE</text>
+
+<!-- Inner Layer 1: CTMS-native datasets (bone/amber — data at rest) -->
+<g>
+<rect x="110" y="425" width="460" height="48" rx="6" fill="#3D3324" stroke="#B89A65" stroke-width="0.5"/>
+<text x="340" y="441" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#F0E4CC">CTMS-native datasets</text>
+<text x="340" y="459" text-anchor="middle" dominant-baseline="central" font-size="10" font-style="italic" fill="#C9B896">populated by CTMS visualization layer</text>
+</g>
+
+<!-- Arrow: native datasets → curated views (small, internal) -->
+<line x1="340" y1="473" x2="340" y2="496" stroke="#7A6F5C" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<!-- Inner Layer 2: Curated leadership views (deep crimson — your contribution) -->
+<g>
+<rect x="110" y="498" width="460" height="40" rx="6" fill="#3D1E1E" stroke="#A03333" stroke-width="0.75"/>
+<text x="340" y="510" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="600" fill="#F5DCDC">Curated leadership views</text>
+<text x="340" y="526" text-anchor="middle" dominant-baseline="central" font-size="10" font-style="italic" fill="#C9A8A8">custom SQL models for executive consumption</text>
+</g>
+
+<!-- Arrow: Snowflake → Power BI -->
+<line x1="340" y1="546" x2="340" y2="589" stroke="#7A6F5C" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<!-- ═══════════════════════════════════════════
+     4. Power BI — dusty rose-violet (presentation/external-facing)
+     ═══════════════════════════════════════════ -->
+<g>
+<rect x="170" y="591" width="340" height="56" rx="8" fill="#3A2832" stroke="#6B4858" stroke-width="0.75"/>
+<text x="340" y="611" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#E8D4DC">Power BI</text>
+<text x="340" y="633" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#B89AA5">Executive dashboards</text>
+</g>
+
+<!-- Arrow: Power BI → Leadership -->
+<line x1="340" y1="647" x2="340" y2="668" stroke="#7A6F5C" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+<!-- ═══════════════════════════════════════════
+     5. Leadership (mint-sage)
+     ═══════════════════════════════════════════ -->
+<g>
+<rect x="170" y="670" width="340" height="46" rx="8" fill="#2D3530" stroke="#8AA88E" stroke-width="0.75"/>
+<text x="340" y="685" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="600" fill="#D8E5DA">Senior Leadership</text>
+<text x="340" y="704" text-anchor="middle" dominant-baseline="central" font-size="10" font-style="italic" fill="#9AB89E">no direct access to upstream systems</text>
+</g>
+
+</svg>

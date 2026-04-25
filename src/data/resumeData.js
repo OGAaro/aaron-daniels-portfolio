@@ -243,7 +243,7 @@ export const projects = [
       'Eliminated manual data handling and large-scale variance in financial reporting.',
     ],
     tech: ['Azure Data Factory', 'Snowflake', 'Python', 'T-SQL', 'Power BI', 'Sigma'],
-    image: null,
+    image: '/projects/utmb_analytics_platform.svg',
     links: [],
     impact: null,
   },
