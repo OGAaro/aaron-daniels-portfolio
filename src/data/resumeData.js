@@ -106,7 +106,7 @@ export const skillCategories = [
   {
     label: 'Tools & Practices',
     type: 'tool',
-    items: ['Microsoft Copilot Studio', 'Agentic AI', 'Project Management', 'CI/CD', 'Power BI', 'Tableau', 'Sigma', 'dbt', 'SSIS', 'Git', 'REST APIs', 'Agile / Scrum', 'ETL Development', 'Wordpress', 'Drupal'],
+    items: ['Agentic AI', 'Project Management', 'CI/CD', 'Power BI', 'Tableau', 'Sigma', 'dbt', 'SSIS', 'Microsoft Copilot Studio', 'Git', 'REST APIs', 'Agile / Scrum', 'ETL Development', 'Infrastructure as Code', 'Wordpress', 'Drupal'],
   },
 ];
 
@@ -117,19 +117,19 @@ export const radarData = [
   { skill: 'Project Mgmt',    value: 85 },
   { skill: 'Analytics & BI',  value: 92 },
   { skill: 'API Integration', value: 87 },
-  { skill: 'Agentic AI',       value: 85 },
+  { skill: 'Agentic AI',      value: 85 },
   { skill: 'DB Admin',        value: 96 },
 ];
 
 export const proficiencies = [
-  { name: 'SQL / Databases',           pct: 97, gradient: 'linear-gradient(90deg,#A03333,#B86B6B)' },
-  { name: 'Python / Data Engineering', pct: 90, gradient: 'linear-gradient(90deg,#B86B6B,#A03333)' },
-  { name: 'Azure/AWS Cloud Platforms', pct: 88, gradient: 'linear-gradient(90deg,#A03333,#C9B896)' },
-  { name: 'JavaScript / Front-End',    pct: 85, gradient: 'linear-gradient(90deg,#C9B896,#A03333)' },
-  { name: 'Power BI / Data Viz',       pct: 92, gradient: 'linear-gradient(90deg,#C9B896,#B86B6B)' },
-  { name: 'ETL / Data Pipelines',      pct: 93, gradient: 'linear-gradient(90deg,#A03333,#C9B896)' },
+  { name: 'SQL / Databases',            pct: 97, gradient: 'linear-gradient(90deg,#A03333,#B86B6B)' },
+  { name: 'Python / Data Engineering',  pct: 90, gradient: 'linear-gradient(90deg,#B86B6B,#A03333)' },
+  { name: 'Azure/AWS Cloud Platforms',  pct: 88, gradient: 'linear-gradient(90deg,#A03333,#C9B896)' },
+  { name: 'JavaScript / Front-End',     pct: 85, gradient: 'linear-gradient(90deg,#C9B896,#A03333)' },
+  { name: 'Power BI / Data Viz',        pct: 92, gradient: 'linear-gradient(90deg,#C9B896,#B86B6B)' },
+  { name: 'ETL / Data Pipelines',       pct: 93, gradient: 'linear-gradient(90deg,#A03333,#C9B896)' },
   { name: 'Agentic AI / Copilot Studio',pct: 85, gradient: 'linear-gradient(90deg,#B86B6B,#C9B896)' },
-  { name: 'React / Vue.js',            pct: 80, gradient: 'linear-gradient(90deg,#B86B6B,#A03333)' },
+  { name: 'React / Vue.js',             pct: 80, gradient: 'linear-gradient(90deg,#B86B6B,#A03333)' },
 ];
 
 export const certifications = [
@@ -168,7 +168,7 @@ export const projects = [
     status: 'live',
     org: 'University of Texas Medical Branch',
     role: 'Architect & Builder',
-    year: '2024 — Present',
+    year: '2026',
     summary: 'A human-in-the-loop AI agent that scores research documentation — IRB packets, protocols, consent forms, and SOPs — against trained acceptability benchmarks to accelerate research intake.',
     highlights: [
       'Auto-clears high-confidence submissions to fast-track routine research approvals.',
@@ -190,7 +190,7 @@ export const projects = [
     status: 'live',
     org: 'University of Texas Medical Branch',
     role: 'Designer & Developer',
-    year: '2024 — Present',
+    year: '2026',
     summary: "A conversational AI assistant grounded on a secure SharePoint knowledge base, serving UTMB's research community with policy guidance, how-to help, and resource discovery.",
     highlights: [
       'Grounded on a curated SharePoint knowledge base for accurate, source-backed responses.',
@@ -212,7 +212,7 @@ export const projects = [
     status: 'shipped',
     org: 'Rice University, Office of Technology Transfer',
     role: 'Project Lead & Salesforce Architect',
-    year: '2021 — 2023',
+    year: '2025 – 2026',
     summary: 'End-to-end replacement of a legacy Technology Transfer platform with a custom-built Salesforce org. This unified system manages the full intellectual property lifecycle, including sponsored research, material transfer (MTA), and non-disclosure agreements (NDA), alongside core invention, patent, and licensing operations for the Rice research community.',
     highlights: [
       'Owned the full lifecycle: requirements gathering, data migration, deployment, and post-launch admin.',
@@ -220,7 +220,7 @@ export const projects = [
       'Integrated Salesforce with USPTO, EPO, and ERP systems for automated data enrichment across IP records.',
       'Enabled invoice reconciliation workflows, ensuring fees and milestone payments matched executed agreements.',
     ],
-    tech: ['Salesforce', 'USPTO API', 'EPO API', 'HCM Integration', 'Apex / SOQL'],
+    tech: ['Salesforce', 'USPTO API', 'EPO API', 'HCM Integration'],
     image: '/projects/salesforce_integration_topology.svg',
     links: [],
     impact: '20 internal staff + 500+ Rice community users on a unified platform',
@@ -234,7 +234,7 @@ export const projects = [
     status: 'live',
     org: 'University of Texas Medical Branch',
     role: 'Architect & Lead Developer',
-    year: '2023 — Present',
+    year: '2025 — Present',
     summary: 'End-to-end data platform connecting HCM and financial systems through automated ETL pipelines into Snowflake, surfacing actionable analytics through executive dashboards used by senior leadership.',
     highlights: [
       'Architected automated data integrations between HCM and financial reporting platforms.',
