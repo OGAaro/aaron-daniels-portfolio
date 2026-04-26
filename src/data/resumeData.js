@@ -106,7 +106,7 @@ export const skillCategories = [
   {
     label: 'Tools & Practices',
     type: 'tool',
-    items: ['Microsoft Copilot Studio', 'AI Agents', 'Project Management', 'CI/CD', 'Power BI', 'Tableau', 'Sigma', 'dbt', 'SSIS', 'Git', 'REST APIs', 'Agile / Scrum', 'ETL Development', 'Wordpress', 'Drupal'],
+    items: ['Microsoft Copilot Studio', 'Agentic AI', 'Project Management', 'CI/CD', 'Power BI', 'Tableau', 'Sigma', 'dbt', 'SSIS', 'Git', 'REST APIs', 'Agile / Scrum', 'ETL Development', 'Wordpress', 'Drupal'],
   },
 ];
 
@@ -117,7 +117,7 @@ export const radarData = [
   { skill: 'Project Mgmt',    value: 85 },
   { skill: 'Analytics & BI',  value: 92 },
   { skill: 'API Integration', value: 87 },
-  { skill: 'AI Agents',       value: 85 },
+  { skill: 'Agentic AI',       value: 85 },
   { skill: 'DB Admin',        value: 96 },
 ];
 
@@ -128,7 +128,7 @@ export const proficiencies = [
   { name: 'JavaScript / Front-End',    pct: 85, gradient: 'linear-gradient(90deg,#C9B896,#A03333)' },
   { name: 'Power BI / Data Viz',       pct: 92, gradient: 'linear-gradient(90deg,#C9B896,#B86B6B)' },
   { name: 'ETL / Data Pipelines',      pct: 93, gradient: 'linear-gradient(90deg,#A03333,#C9B896)' },
-  { name: 'AI Agents / Copilot Studio',pct: 85, gradient: 'linear-gradient(90deg,#B86B6B,#C9B896)' },
+  { name: 'Agentic AI / Copilot Studio',pct: 85, gradient: 'linear-gradient(90deg,#B86B6B,#C9B896)' },
   { name: 'React / Vue.js',            pct: 80, gradient: 'linear-gradient(90deg,#B86B6B,#A03333)' },
 ];
 
@@ -148,7 +148,7 @@ export const interests = [
 ];
 
 export const heroBadges = [
-  'AI Agents', 'Microsoft Copilot Studio', 'Azure Data Factory', 'Snowflake',
+  'Agentic AI', 'Microsoft Copilot Studio', 'Azure Data Factory', 'Snowflake',
   'Salesforce', 'React / Vue.js', 'Power BI', 'Business Intelligence', 'ETL Pipelines', 'RESTful APIs',
 ];
 
@@ -163,7 +163,7 @@ export const projects = [
     id: 'ai-research-triage',
     title: 'AI Research Document Triage Agent',
     shortLabel: 'AI Triage Agent',
-    category: 'AI Agents',
+    category: 'Agentic AI',
     categoryIcon: '🤖',
     status: 'live',
     org: 'University of Texas Medical Branch',
@@ -176,7 +176,7 @@ export const projects = [
       'Trained on acceptability benchmarks across multiple research document types.',
       'Built with governance-first principles — humans stay in control of final decisions.',
     ],
-    tech: ['Microsoft Copilot Studio', 'SharePoint', 'RAG', 'AI Agents', 'LLM Orchestration'],
+    tech: ['Microsoft Copilot Studio', 'SharePoint', 'RAG', 'Agentic AI', 'LLM Orchestration'],
     image: 'projects/document_triage_agent.svg',
     links: [],
     impact: null,
@@ -185,7 +185,7 @@ export const projects = [
     id: 'ai-research-chatbot',
     title: 'Research Community AI Chatbot',
     shortLabel: 'AI Chatbot',
-    category: 'AI Agents',
+    category: 'Agentic AI',
     categoryIcon: '💬',
     status: 'live',
     org: 'University of Texas Medical Branch',
@@ -198,7 +198,7 @@ export const projects = [
       'Deflects routine inquiries that previously consumed help desk, email, and Teams capacity.',
       'Designed with secure access controls aligned to the institution\'s data governance.',
     ],
-    tech: ['Microsoft Copilot Studio', 'SharePoint', 'RAG / Knowledge Grounding', 'AI Agents'],
+    tech: ['Microsoft Copilot Studio', 'SharePoint', 'RAG / Knowledge Grounding', 'Agentic AI'],
     image: '/projects/research_chatbot.svg',
     links: [],
     impact: '40% reduction in help desk tickets, emails, and Teams messages',
