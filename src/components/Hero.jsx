@@ -5,7 +5,7 @@ import StatPill from './StatPill';
 export default function Hero() {
   // Three animated counters for the stat pills.
   // Each call to useCounter kicks off its own independent animation on mount.
-  const yoe  = useCounter(8);
+  const yoe  = useCounter(9);
   const cert = useCounter(4);
   const tech = useCounter(35);
 
@@ -28,7 +28,7 @@ export default function Hero() {
             Sr. Application Systems Analyst &amp; Full-Stack Engineer
           </div>
           <p className="hero-desc">
-            Strategic technologist with 8+ years of experience in architecting end-to-end 
+            Strategic technologist with 9+ years of experience in architecting end-to-end 
             solutions across enterprise systems, cloud infrastructure, and front-end platforms. 
             Expert at bridging the gap between complex data ecosystems and actionable business 
             intelligence through high-impact automation and analytics initiatives.
